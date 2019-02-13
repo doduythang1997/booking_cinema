@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:mysql://localhost:3306/booking_cinema</property>
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+      <mapping class="com.dts.demo_cinema.Domain.Entity.ActorsEntity"/>
+      <mapping class="com.dts.demo_cinema.Domain.Entity.CategoriesEntity"/>
+      <mapping class="com.dts.demo_cinema.Domain.Entity.DirectorsEntity"/>
+      <mapping class="com.dts.demo_cinema.Domain.Entity.MoviesEntity"/>
+      <mapping class="com.dts.demo_cinema.Domain.Entity.MovietheaterEntity"/>
+      <mapping class="com.dts.demo_cinema.Domain.Entity.RoomEntity"/>
+      <mapping class="com.dts.demo_cinema.Domain.Entity.ScreeningEntity"/>
+      <mapping class="com.dts.demo_cinema.Domain.Entity.SeatEntity"/>
+      <mapping class="com.dts.demo_cinema.Domain.Entity.TicketEntity"/>
+      <mapping class="com.dts.demo_cinema.Domain.Entity.ActorsEntity"/>
+      <mapping class="com.dts.demo_cinema.Domain.Entity.CategoriesEntity"/>
+      <mapping class="com.dts.demo_cinema.Domain.Entity.DirectorsEntity"/>
+      <mapping class="com.dts.demo_cinema.Domain.Entity.MoviesEntity"/>
+      <mapping class="com.dts.demo_cinema.Domain.Entity.MovietheaterEntity"/>
+      <mapping class="com.dts.demo_cinema.Domain.Entity.RoomEntity"/>
+      <mapping class="com.dts.demo_cinema.Domain.Entity.ScreeningEntity"/>
+      <mapping class="com.dts.demo_cinema.Domain.Entity.SeatEntity"/>
+      <mapping class="com.dts.demo_cinema.Domain.Entity.TicketEntity"/>
+      <!-- <property name="connection.username"/> -->
+    <!-- <property name="connection.password"/> -->
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>
